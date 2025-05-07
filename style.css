@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: rgb(128, 6, 91);
+ }
+
+.main{ background-color: rgb(196, 78, 117);
+       padding: 2 rem;
+       text-align: center;
+}
+
+.nav-bar{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.nav-bar a{
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section{
+    background-color: rgb(196, 78, 117);
+}
