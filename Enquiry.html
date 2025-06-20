@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documents</title> 
+    <meta name="description" content="Get your favorite drinks from us." />
+    <title>Documents | Buble Sips & Sweet Smiles</title> 
    <link rel="stylesheet" href="CSS/style.css">
     </head>
 
@@ -31,7 +32,40 @@
 
     
     </section>
-     <hr>
+       <hr>
+        <center>
+    <form action="/submit-inquiry" method="POST">
+  <h2>Product Order.</h2>
+
+  <label for="name">Full Name:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="email">Email Address:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <form id="phoneForm" onsubmit="return validatePhoneForm()">
+  <label for="phone">Phone Number:</label><br>
+  <input type="text" id="phone" name="phone" required><br><br>
+
+  <label for="products">Interested Product:</label><br>
+  <select id="product" name="product">
+    <option value="Classic Chocolate boba tea R78">Classic Chocolate boba tea R78</option>
+    <option value="Classic Chocolate boba tea R49">Classic Chocolate boba tea R49</option>
+    <option value="Salted Caramel frappuccino boba tea R78">Salted Caramel frappuccino boba tea</option>
+    <option value="Salted Caramel frappuccino boba tea R49">Salted Caramel frappuccino boba tea R49</option>
+    <option value="Golden brown amber boba tea R78">Golden brown amber boba tea R78</option>
+    <option value="Golden brown amber boba tea R49">Golden brown amber boba tea R49</option>
+    <option value="Matcha bliss boba tea R78">Matcha bliss boba tea R78</option>
+    <option value="Matcha bliss boba tea R49">Matcha bliss boba tea R49</option>
+  </select><br><br>
+
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+
+  <button type="Send Inquiry" onclick="SendInquiry()">Send Inquiry</button>
+</form>
+<hr>
      <!-- This is the footer -->
      <footer>
        &copy; BUBBLE SIPS & SWEET SMILES. All rights reserved.
